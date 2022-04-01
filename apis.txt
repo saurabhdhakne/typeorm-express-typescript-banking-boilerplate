@@ -1,0 +1,35 @@
+Client : 
+        POST: http://localhost:3000/api/client
+        {
+            "firstName":"john",
+            "lastName":"Wick",
+            "email":"john@mail.com",
+            "cardNumber":"9954378901",
+            "balance":1500
+        }
+
+        DELETE: http://localhost:3000/api/client/4
+
+        GET: http://localhost:3000/api/clients
+
+
+Banker : 
+        POST: http://localhost:3000/api/banker
+        {
+            "firstName":"Son",
+            "lastName":"goku",
+            "email":"son@mple.com",
+            "cardNumber":"5678987345",
+            "employeeNumber":1
+        }
+
+Transaction
+        POST: http://localhost:3000/api/client/5/transaction
+        {
+            "type":"deposit",
+            "amount":500
+        }
+
+
+Connect Banker to Client 
+        POST: http://localhost:3000/api/banker/6/client/6
